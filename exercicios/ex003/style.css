@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+
+main {
+    background-color: blue;
+    width: auto;
+    height: 700px;
+}
+nav > a {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
