@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iFrame</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            display: block;
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegando com iFrame</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat cumque cum provident quaerat nostrum? Ipsum, consequatur ipsa obcaecati quia voluptatem amet sint corrupti hic eligendi dolorem error odio alias.</p>
+
+    <ul>
+        <li><a href="pag1.html" target="frame">Primeira página</a></li>
+        <li><a href="background001.jpg" target="frame">Segunda página</a></li>
+        <li><a href="background002.jpg" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nesciunt minima iste architecto numquam laudantium temporibus, nostrum cupiditate dolore quas illum culpa libero! Excepturi assumenda quo ea provident, velit rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magni eligendi, sed reprehenderit adipisci provident laboriosam fugiat eius officia? Sapiente molestias porro corporis natus quasi inventore veniam deserunt ex laboriosam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, ipsa quaerat! Tempora enim exercitationem assumenda eos suscipit nihil nam dolorum maxime, corrupti quaerat quos, nulla, fugit numquam quia nobis. Similique.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Oi</h1><p>Tudo bem?</p>">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere soluta quidem. Neque exercitationem, ducimus commodi laborum esse vel quae possimus provident explicabo reiciendis labore soluta, sunt quasi. Itaque, asperiores.</p>
+    <iframe src="pag2.html" sandbox="sandbox" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com iFrame
+    </iframe>
+
+    <iframe src="pag2.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer-when-downgrade">
+        Seu navegador não é compatível com iFrame
+    </iframe>
+    <iframe src="pag4.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer-when-downgrade">
+        Seu navegador não é compatível com iFrame
+    </iframe>
+</body>
+</html>
